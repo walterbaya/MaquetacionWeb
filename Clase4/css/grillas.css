@@ -1,0 +1,49 @@
+#caja{width: 500px;
+      height: 500px;
+	  border: 1px dotted red;
+	  /*para declarar que sera grilla
+	  declaramos el display en grid*/
+	  display: grid;
+	  /*permite indicar cuantas 
+	  columnas vamos a tener*/
+	  grid-template-columns: auto auto auto auto;
+	  grid-template-rows: 200px;
+	  /*los gaps sirven para el espaciado entre celdas*/
+	  grid-row-gap: 5px;
+	  grid-column-gap: 2px;
+	  /*tambien se puede poner column-gap o row-gap y es lo mismo.*/
+	  /*el primer div ocupara 100 de ancho y el
+	  segundo 200*/ 
+	  /*Si quiero que el segundo por ejemplo ocupe todo
+	  entonces le pongo auto*/
+	  /*grid-template-columns: 100px 200px;
+
+	  grid-template-rows: 100px 50px;
+
+	  define el tamaño del alto de cada fila. en este 
+	  caso se esta diciendo que la primera va a tener 100px
+	  y la segunda 50px*/  
+	  background-color: blue;
+	}
+
+#caja div{
+	/*background-color: lightblue;*/
+	border: 1px solid black;
+}
+
+
+/*Con esto decimos que la imagen ocupa el 100%*/
+div img{width: 100%;
+		height: 100%;}
+
+/*en que columna va a aparecer por primera vez el elemento
+primero,si en vez de dos hubiera un tres entonces quedarian
+las primeras dos celdas vacias y apareceria el primer elemento
+en la tercera*/
+/*#primero{grid-column-start: 2;}*/
+
+/*esto dice que empieza donde debe empezar en este caso como
+no dice nada empieza en la primera y luego termina en la segunda
+columna expandiendose 2 columnas
+gracias a span*/
+#primero{grid-column-end: span 2;}

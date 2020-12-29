@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: auto;
+    background-color: grey;
+    position: relative;
+}
+
+/*RESPONSIVE:
+  Manejar las imagenes en porcentajes
+  Grillas fluidas
+  etiqueta meta viewport
+  Arrancar maquetando en un movil
+  verlo y pensarlo en un celular,
+  esto se llama movile first.
+    */
+
+#contenedor{
+    width: 50%;
+    height: 300px;
+    background-color: brown;
+}
+
+h1{
+    font-family: arial;
+    color: white;
+}
+
+/*media queries
+Es como un if
+Sirve para indicar en que resolución de pantalla
+nuestra pantalla va a sufrir una reorganizacion 
+de los elementos
+*/
+
+/*a partir de 768 en adelante ocurrira
+lo que esta dentro de los corchetes*/
+@media screen and (min-width: 768px){
+    
+    body{
+        background-color: green;
+    }
+
+    #contenedor{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    h1{
+        text-align: center;
+        text-shadow: 1px 1px 3px black;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #contenedor{
+        display: none;
+    }
+}

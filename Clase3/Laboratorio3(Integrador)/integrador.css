@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+}
+body{
+	font-family: "Roboto Slab";
+	font-size: 90%;
+	background-image: url("imagenes/pattern.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+}
+nav{
+	margin-left: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+header h1{
+	font-family: "Berkshire Swash", cursive;
+	font-size: 2.5em;
+	line-height: 2.5em;
+}
+
+a{
+	padding: 1em;
+	margin: 1em;
+}
+
+nav a:link{
+	text-decoration: none;
+	color: white;
+}
+nav a:visited{
+	color: white;
+	text-decoration: none;
+}
+nav a:hover{
+	text-decoration: underline;
+	 color: white;
+}
+nav a:active{
+	color: white;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	padding-top: 8em;
+}
+
+main div:first-child{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+main div h2{
+	color: rgba(0,0,0,0.8);
+	font-size: 6em;	
+	opacity: 0.8;
+}
+
+main div:last-child{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+button{
+	width: 35%;
+	background-color: limegreen;
+	color: white;
+	font-size: 1.5em;
+}
+main div button:last-child{
+	margin-left: 2em;	
+}

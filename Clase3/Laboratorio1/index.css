@@ -1,0 +1,78 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+main{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+main section p{
+	padding: 1em;
+	line-height: 1.5em;
+}
+main section p::first-letter{
+	font-size: 30px;
+	color: yellow;
+}
+main section h1{
+	padding: 0.6em;
+}
+main section{
+	width: 40%;
+	margin: 1em 0.5em 1em 0.5em; 
+}
+main section:first-child{
+	background-color: rgb(235, 88, 52);
+}
+main section:last-child{
+	background-color: rgb(135, 210, 245);
+}
+
+body div{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: #ccc;
+}
+body div h1{
+	background-color: yellow;
+	margin-left: 37%;
+	padding: 0.2em 3em 0.2em 3em;
+}
+
+body div ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	list-style: none;
+}
+
+body div ul li{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 4em;
+	padding-right: 4em; 
+	background-color: black;
+	color: white;
+	margin-bottom: 1em;
+	text-align: center;
+}
+body div ul li:last-child{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 4em;
+	padding-right: 4em; 
+	background-color: black;
+	color: white;
+	margin-bottom: 0.4em;
+	text-align: center;
+}

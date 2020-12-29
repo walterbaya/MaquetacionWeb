@@ -1,0 +1,47 @@
+@import url(Parrafos.css);
+
+body{
+	width: 1000px;
+	height: auto;
+	background-color: grey;
+	margin: auto;
+}
+
+h1{
+	font-family: arial;
+	color: white;
+	text-align: center;
+	text-shadow: 0 0 5px #000;
+
+
+}
+
+h2{
+	font-family: arial;
+}
+
+/*MODELO DE CAJA*/
+
+#caja1{
+	width: 300px;
+	height: 250px;
+	background-color: violet;
+	border: 2px solid black;
+}
+
+
+#caja2{
+	width: 300px;
+	height: 250px;
+	background-color: green;
+	border: 1px solid black;
+	padding: 10px 5px 50px 70px;
+}
+
+#caja3{
+	width: 300px;
+	height: 250px;
+	background-color: deeppink;
+	margin-top: 20px;
+}
+

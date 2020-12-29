@@ -1,0 +1,75 @@
+ /*Primero declaro la tipografia*/
+ *{margin: 0;
+   box-sizing: border-box;} /*selector universal*/
+ /*el border box sirve para contar el pixel extra de la suma de 100% + 1px + 1px
+   se genere para dentro robando parte del contenedor al que se le aplica el borde.*/
+    
+ body{
+ 	width: 100%;
+ 	height: auto;
+ 	background-color: #ccc;
+ }
+header{width: 100%;
+       height: 300px;
+       background-color: #035A63;} /*los porcentajes son segun su 
+					   contenedor principal o sea el 
+					   body en este caso*/
+nav{
+	width: 100%;
+	height: 55px;
+	background-color: #07A233;
+}
+
+main{
+	width: 100%;
+	height: 650px;
+	background-color: white;
+}
+
+/*Float propiedad
+sirve para que los elementos floten y se acomoden uno al lado
+del otro*/
+/*usar siempre left o right actualmente no se usa mas
+center*/
+/*La propiedad Clear sirve para que deje de flotar.*/
+#bloque1{
+	width: 25%; /*En responsive design es super importante el ancho
+				el alto lo puedo manejar en pixeles*/
+	height: 650px;
+	background-color: darkviolet;
+	float:left;
+	border-right: 1px solid black;
+}
+#bloque2{
+	width: 50%; 
+	height: 650px;
+	background-color:darkviolet;
+	float: left; 
+}
+#bloque3{
+	width: 25%; 
+	height: 650px;
+	background-color: darkviolet;
+	/*clear: both; *el clear sirve para que se vaya hacia abajo sin quedarse atras
+				   de los que estan flotando*/
+    float: right;  /*podria ponerle left y es lo mismo en este caso*/
+    border-left: 1px solid black;
+}					/*el valor de px + sombra a derecha(abajo) - sombra a izquierda(arriba) 
+					*/
+
+p{font-family: verdana;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 5px black} /*LEFT-RIGHT UP-DOWN difuminado color sombra*/
+
+footer{
+	width: 100%;
+	height: 270px;
+	background-color: #035A63;
+	clear:   /*Clear se utiliza para decir que no flote, a veces
+	 		ocurre que se pone detras de las cosas que estan flotando*/
+	 		/*en general se usa flexbox en vez de Clear para maquetados complejos*/
+
+
+}

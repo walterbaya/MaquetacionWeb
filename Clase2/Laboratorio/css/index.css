@@ -1,0 +1,88 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 1em;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	line-height: 2;
+	width: 100%;
+	height: 800px;
+}
+
+header{
+	background-color: #a9a9a9;
+	height: 100px;
+	padding-bottom: 1em;
+	padding-left: 1em;
+}
+
+main{
+	height: 75%;
+}
+
+#logo{
+	height: 80%;
+	width: 5%;
+	float: left;
+	margin: 1em;
+	margin-right: 0;
+}
+
+#logotexto{
+	font-size: 2em;
+	color: #32343c;
+	width: 100px;
+	height: 3em;
+	margin-left: 3em;
+	padding-top: 0.8em;
+}
+
+#verde{
+	background-color: #90ee90;
+	height: 33.33%;
+}
+
+#Camara{
+	height: 60%;
+	float: left;
+}
+
+#rosa{
+	background-color: #ffc0cb;
+	height: 33.33%;
+}
+#textoverde1{
+	float: left;
+	width: 38%;
+	margin-top: 1em;
+}
+
+#textoverde2{
+	width: 50%;
+	float: right;
+	margin-top: 1em;
+}
+
+#pies{
+	height: 100%;
+	float: left;
+}
+
+#celeste{
+	background-color: #add9e6;
+	height: 33.33%;
+	line-height: 0;
+	padding-top: 0.5em;
+}
+
+footer{
+	background-color: #a9a9a9;
+	height: 12.5%;
+}
+h1{
+	line-height: 0;
+	color: black;
+}

@@ -1,0 +1,18 @@
+ /*Primero declaro la tipografia*/
+ @font-face{font-family: Rockout; src:url(../fuentes/Rockout.otf);}
+ /*el ../ indica que se va a salir de una carpeta y volver a la carpeta padre*/
+ body{
+ 	width: 1000px;
+ 	height: auto;
+ 	margin: auto;
+ 	background-color: #0397A5;
+ }
+
+ h1{font-family: Rockout,helvetica, sans-serif;}
+ /*Siempre es recomendable poner la fuente principal, una secundaria similar y luego una familia de fuentes*/
+ p{ font-family: Rockout;
+ 	font-size: 20px;}
+h2{font-family: 'Sniglet', cursive;}
+
+#a2{font-family: 'Sniglet', cursive;
+	font-size: 18px;}

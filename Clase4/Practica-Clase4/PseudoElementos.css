@@ -1,0 +1,47 @@
+/*p::after { content: 'Mi otro texto'; }*/
+
+/*Sirve para agregar contenido ya sea texto luego de
+  el contenido señalado.*/
+
+/*p::after { content: url(imagen.jpg); }*/
+
+/*o imagenes*/
+
+/*body{counter-reset: miTitulo;}
+/*h1{counter-increment: miTitulo;}
+h1::after{content: 'Titulo' counter(miTitulo) url(imagen.jpg);}
+
+h1{counter-increment: miTitulo;}
+h1::after{content: 'Titulo' counter(miTitulo);}
+*/
+/*Para contabilizar
+counter-reset lo que permite hacer es 
+resetear el contador, ponerlo en 0.
+se le puede poner un nombre
+
+counter-reset: nombre; con el nombre vamos a
+incrementarlo.
+
+counter-increment: titulos;
+content: counter(titulos);
+
+lo llama y muestra en cada uno.
+}
+*/
+
+/*antes de cada h2 voy a mostrar cual es el numero */
+
+section{
+	counter-reset: contador;
+}
+
+/*le estoy diciendo a los h2 que incrementen el contadore*/
+h2{counter-increment: contador}
+/*con esto muestro en pantalla el contador*/
+h2::after{content: counter(contador);}
+
+/*Pero lo mete dentro del h2 al final o al principio del mismo
+pasa a formar parte del contenido*/
+
+/*content: attr(nombre de id o de atributo)
+  sirve para obtener el contenido o valor del atributo*/

@@ -1,0 +1,13 @@
+ul{ /*Este atributo permite que la viñeta
+      forme parte de la lista y no que esta
+      fuera de ella ocupando la zona de padding.
+      En general esto viene con atributo outside.
+    */
+	list-style-position: inside;
+    list-style-image: url("../imagenes/tick.svg");
+    list-style-type: circle;
+}
+
+ol{
+	list-style-type: lower-roman;
+}

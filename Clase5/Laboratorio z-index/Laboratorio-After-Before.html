@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Laboratorio01</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Laboratorio-After-Before.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+		
+		$(function(){
+			$('#cerrar').click(cerrar)
+			$('#interno').click(abrirLogin)
+			$('#enviar').click(enviarInformacion)
+		})
+
+		function cerrar(){
+			$('#formulario').slideUp()
+		}
+
+		function abrirLogin(){
+			$("#formulario").css("display", "grid");
+			$('#formulario').slideDown()
+		}
+
+	</script>
+
+</head>
+<body>
+	<h1 id="TITULO"></h1>
+
+	<form method="POST" id="formulario">
+			<input type="button" id="cerrar"></input>
+			<h2 id="ingresar">Ingresar</h2>
+			<label for="texto"><p id="usuario">Usuario: </p></label>	
+				<input id="texto" type="text">
+			<label for="password">
+				<p id="contraseña">Contraseña: </p>
+			</label>
+				<input id="password" type="password">
+
+				<input type="submit" id="enviar" value="Enviar">
+	</form>
+<nav>
+	<ul>
+		<li><a href="#">Inicio</a></li>
+		<li class="desplegable"><a href="#">Servicios</a></li>
+		<li  class="desplegable"><a href="#">Ubicaciones</a></li>
+		<li><a href="#">Trabaja Con Nosotros</a></li>
+		<li><a href="#">Contacto</a></li>		
+		<li class="desplegable" >
+			<a href="#">
+		    <div id="interno">
+				<p>Login</p>
+			    <div id="login"></div>
+			</div>
+		</a></li>
+	</ul>
+</nav>	
+	<div id="contenedortexto">
+	<section>
+		<h2></h2>
+		<p>Lorem ipsum dolor sit amet consectetur 
+			adipisicing elit. Velit, debitis ducimus.
+			Dolorem optio eaque, est non magni omnis 
+			odio temporibus soluta repellat blanditiis
+			iure ullam corporis consequatur dolor rem. 
+			Rem?</p>
+	</section>	
+	<section>
+		<h2></h2>
+		<p>Lorem ipsum dolor sit amet consectetur 
+			adipisicing elit. Velit, debitis ducimus.
+			Dolorem optio eaque, est non magni omnis 
+			odio temporibus soluta repellat blanditiis
+			iure ullam corporis consequatur dolor rem. 
+			Rem?</p>
+	</section>	
+	<section>
+		<h2></h2>
+		<p>Lorem ipsum dolor sit amet consectetur 
+			adipisicing elit. Velit, debitis ducimus.
+			Dolorem optio eaque, est non magni omnis 
+			odio temporibus soluta repellat blanditiis
+			iure ullam corporis consequatur dolor rem. 
+			Rem?</p>
+	</section>	
+
+
+	
+	</div>
+
+	<footer> 
+		
+	</footer>
+	<div id="chat">
+			<p>Chat</p>
+			<div id="chatimg"></div>
+		</div>
+</body>
+</html>

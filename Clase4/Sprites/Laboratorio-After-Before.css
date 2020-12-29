@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+ul{display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	background-image: url(../imagenes/pattern-02.png);
+	padding: 2%;
+	list-style: none;
+}
+
+li{border-radius: 0.4em;
+	display: flex;
+	padding: 0.5em;
+ align-items: center;}
+a{text-decoration: none; color: black; font-size: 1.4em;text-align: center;}
+li:active{background-color: grey;}
+li:hover{background-color: grey;}
+
+/*Se pueden agregar propiedades al final*/
+.desplegable::after{content: url(../imagenes/flecha.png);
+	margin-left: 0.5em;}
+
+/*Como extra le voy a mter al h1 su id como titulo
+entre parentesis*/
+h1::after{content: "("attr(id)")";}
+h1{padding: 1em;text-align: center;background-color: grey;}
+
+#contenedortexto{
+	display: flex;
+	flex-direction: row;
+	margin-top: 100px;
+}
+
+#contenedortexto{ counter-reset: contador;}
+
+#contenedortexto h2{counter-increment: contador;}
+
+#contenedortexto h2::before{content: 'Columna' counter(contador);}
+
+#interno{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-items: space-between;
+}
+
+#login{
+	height: 40px;
+	width: 40px;
+	background-image: url("imagenes/sprite.png");
+	background-size: 140px 150px;
+	background-position: 0px -5px;
+}
+
+#login:hover{
+	background-position: center;
+}
+
+h2{
+	text-decoration: underline;
+	font-weight: normal;
+	text-align: center;
+}
+/*Cada icono tiene 45px de ancho y 60 de alto
+	30px de separacion vertical
+	 55 de separacion horizontal
+	 30 horizontal de inicio
+	 15 de inicio
+	 */

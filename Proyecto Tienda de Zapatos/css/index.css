@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap'); 
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Zilla Slab', serif;
+	color: #333333;
+}
+
+body{
+	width: 100%;;
+}
+
+header{
+	   width: 100%;
+	   background-color: white; 
+}
+
+h2{
+	font-size: 4em;
+	text-align: center;
+	padding: 1em;
+	border-width: 1px;
+	color: #333333;
+	font-weight: normal;
+}
+#iconos{
+	width: 100%;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#redessociales{
+	width: 150px;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-right: 6em;
+	opacity: 0.7;
+}
+
+.redsocial{
+	height: 30px;
+	width: 40px;
+	margin-right: 1em;
+}
+.redsocial img{
+	height: 100%;
+	width: 100%;
+}
+
+
+#menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border-style: solid;
+	border-left: none;
+	border-right: none;
+	border-width: 1px;
+	border-color: #778899;
+	width: 100%;
+	height: 40px;
+}
+
+.items{
+	width: 230px; 
+	height: 100%;
+	text-align: center;
+	color:  #333333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu li:hover{
+	background-color: #778899;
+	color: #DCDCDC;
+}
+
+#tresbarras{
+	width: 30px;
+	height: 40px;
+	margin-left: 3em;
+	opacity: 0.4;
+}
+
+#tresbarras:hover{
+	opacity: 1;
+}
+
+
+#hamburguesa{
+	width: 100%;
+	height: 100%;
+}
+
+#logo{
+	height:100px; 
+	width:200px;
+	margin-right: auto;
+	margin-left: 4em;
+}
+
+#logoimagen{
+	height: 100%;
+	width: 100%;
+}
+
+#contenedordetitulo{  
+	width: 100%;
+	display: flex;
+	padding: 1.5em;
+}
+
+#nombretienda{
+	padding: 0.5em;
+	text-align: center;
+	width: 100%;
+	font-family: 'Zilla Slab', serif;
+	font-size: 5em;
+ 	font-weight: normal;
+ 	color: #333333;
+}
+
+section{
+	width: 100%;
+	height: 500px;
+	border-top: solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+main{
+ 	background-color: white;
+ 	display: flex;
+ 	flex-direction: column;
+ 	width: 100%;
+  	border: solid 4px  #333333;
+  	border-right:  none;
+  	background-color: white;
+  	border-left: none;
+}
+main div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+#filtrar{
+	background-color:whitesmoke;
+	width: 30%;
+}
+.zapato{
+	background-color: white;
+	color: #333333;
+	font-weight: normal;
+}
+
+.zapato div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+hr{
+	background-color: grey;
+}
+
+#catalogo{
+	padding: 3em;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 2em; 
+	align-content: center;
+	justify-content: space-evenly;
+
+}
+
+
+#catalogo div{
+	border-width: 2px;
+	width: 200px;
+	height: 300px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 3px;
+}
+
+#catalogo div img{
+	width: 100%;
+	height: 80%;
+}
+
+#catalogotitulo{
+	background-image: url("../imagenes/patron.jpg");
+}
+
+hr{color: white;}
+
+
+#envios{
+	border-bottom-style: solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-image: url("../imagenes/transporte.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+#nuestrolocal{
+	display: flex;
+	flex-direction: row;
+	background-color: wheat;
+
+}
+
+#nuestrolocal div{
+	width: 45%;
+	height: 100%;
+}
+#nuestrolocal div:last-child{
+	background-image: url("../imagenes/tienda.jpeg");
+	background-size: cover;
+}
+
+#nuestrolocal div:first-child{
+	width: 55%;
+	display: flex;
+	background-color: white;
+	flex-direction: column;
+}
+#nuestrolocal h2{
+	background-color: #778899;
+}
+
+#nuestrolocal section{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+#nuestrolocal p{
+	text-align: left;
+	padding: 2em;
+	width: 45%;
+	height: 90%;
+}
+
+footer{
+ 	height:200px;
+ 	width: 100%;
+ 	background-color: white; 
+ 	padding: 2em;
+ }
+

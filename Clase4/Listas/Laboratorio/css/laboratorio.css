@@ -1,0 +1,28 @@
+*{
+  margin:0;
+  padding:1em;
+  text-align: justify;
+}
+h1::first-letter{
+	font-weight: bold;
+	font-size: 3em;
+	text-decoration: underline;
+	text-decoration-style: solid;
+	background-color: cornflowerblue;
+}
+h1{
+	text-decoration: underline;
+}
+
+
+ul{
+	list-style-image: url("../imagenes/check.png");
+	list-style-position: inside;
+}
+
+li{padding-right: 55%;}
+
+p{
+	padding-left: 2em;
+	padding-right: 55%
+}

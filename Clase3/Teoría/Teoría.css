@@ -1,0 +1,166 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	padding: 1em;
+}
+#contenedor {
+	/*El flex siempre lo toma el contenedor luego todo lo que este
+	dentro va a estar encolumnado de forma facil, otra cosa interesante
+	es que se usa display: flex, el flexbox sirve para encolumnar con  mayor facilidad
+	los elementos dentro de un contenedor
+	Algo mas que tambien es interesante es que los elementos se van a adaptar a su contenedor
+	no importa que el contenedor tenga tamaño mucho menor que los elementos
+	los mismos se van a encolumnar tratando de ocuparlo de forma uniforme*/
+	list-style: none;
+	display: flex;
+	/*inline flex los transforma en elementos de lineal, mientras que flex los transforma en elementos de bloque */
+	width: 400px;
+	height: 250px;
+	background-color: grey;
+	/*
+	flex-direction: column;
+	Los elementos se encolumnan de arriba hacia abajo
+	*/
+		/*
+	flex-direction: column;
+	Los elementos se encolumnan de abajo hacia arriba
+	*/
+	flex-direction: row;
+	/*los elementos se encolumnan de izquierda a derecha*/
+
+	/*flex-direction: row-reverse;
+		lo mismo pero al reves de lo que era el row, en este caso
+		van de derecha hacia izquierda segun el orden en el que los puse
+		en el html
+		*/
+	/*Los elementos desde el principio van a tener espacio entre ellos	
+	
+	justify-content: space-between;
+	
+	/*van a aparecer a la izquierda o al principio, el primero se pega a la izquierda
+	
+	justify-content: flex-start;
+
+	/*van a aparecer a la derecha pegados, se pega el ultimo a la derecha
+
+	justify-content: flex-end;
+
+	/*van a tener espacion no solo entre, sino tambien en sus bordes*/
+
+	justify-content: space-around;
+
+/*esta propiedad lo que hace es que todos los espacios sean iguales
+entre los elementos y los bordes del contenedor, es normal que 
+el lector de sublime no lo reconozca porque es nuevo justify-content: 
+space-evenly;
+*/
+
+
+/*******************************************************************/
+/*Propiedad align items **/
+
+	/*Los items van pegados al contenedor 
+		align-items: stretch;*/
+	/*Los items van pegados en la parte superior del contenedor
+		align-items: flex-start;*/
+	/*Los items van pegados en la parte inferior del contenedor
+		align-items: flex-end;*/
+
+	/*Los items van pegados en la parte inferior del contenedor*/
+	/*	align-items: center;*/
+
+/*lo envuelve el wrap, hace que si tengo 10 elementos
+ocupe la pantalla siguiendo el tamaño de cada uno y luego bajen
+
+	flex-wrap: wrap;
+*/
+
+align-items: center;
+
+}
+
+.items {
+	background-color: blue;
+	width: 100px;
+	height: 100px;
+	/*margin: 10px;*/
+	/*padding: 1%;*/
+	/*El border box lo que dice es que el padding se va a
+	tomar del ancho y el alto del elemento y no se le va a agregar
+	es decir si media 20 pixeles de ancho y le puso padding
+	de ancho a ambos lados de 5 pixeles voy a tener 10 pixeles de
+	padding y la suma del widht mas el padding va a dar 20px*/
+	/*box-sizing: border-box;*/
+	text-align: center;
+	padding-top: 4em;
+}
+
+
+.items:first-child {
+	/*Podemos elegir el margen para cada elemento en particular, dejando todos los otros como estan sin afectarlos
+	por ejemplo si quisiera darle en particular al primer hijo un margen de 20 px de alto*/
+	/*margin-top:   20px;*/
+	/*lo mismo con el align-self*/
+	align-self: center;
+}
+
+a:link{
+	color: white;
+}
+a:visited{
+	color: red;
+}
+a:hover{
+	color: white;
+}
+a:active{
+	color: grey;
+}
+
+#segundo:hover{
+	color: black;
+}
+
+#item2:hover{
+	opacity: 0.5;
+	background-color: white;
+}
+
+form{
+	margin: 2em;
+}
+
+#nombre{
+	width: 200px;
+}
+#nombre:focus{width: 400px;}
+
+/*afecta de todos los p al que es primer hijo
+de algun padre*/
+p:first-child{
+	background-color: red;
+}
+
+p:last-child{
+	background-color: blue;
+}	
+
+/*Pseudoelementos van con ::*/
+
+/*del parrafo p lo que ocurre es que la primera
+linea se vuelve blanca*/
+
+label, input{
+	display: block;
+}
+p::first-line{
+	color: white;
+}
+
+/*coloco la primera letra de el parrafo*/
+
+p::first-letter{
+	font-size: 4em;
+}

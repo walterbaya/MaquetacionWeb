@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+}
+body{
+	height: 2000px;
+	background-color: cornflowerblue;
+}
+video{
+	width: 100%;
+	height: auto;
+}
+
+h1, h2, h3{
+	margin: 25px;
+}
+
+video{
+	width: 100%;
+	height: auto;
+	margin-bottom:  50px;
+}
+
+audio{
+	width: 400px;
+	margin-bottom: 50px;
+}
+
+
+

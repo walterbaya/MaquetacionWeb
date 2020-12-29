@@ -1,0 +1,185 @@
+*{
+	margin: 0;
+	padding: 0;
+	line-height: 1.6em;
+}
+body{
+	height: 2000px;
+}
+ul{display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-image: url(../imagenes/pattern-02.png);
+	padding: 2%;
+	list-style: none;
+}
+
+li{border-radius: 0.4em;
+	display: flex;
+	padding: 0.5em;
+ align-items: center;}
+a{text-decoration: none; color: black; font-size: 1.4em;text-align: center;}
+li:active{background-color: grey;}
+li:hover{background-color: grey;}
+
+/*Se pueden agregar propiedades al final*/
+.desplegable::after{content: url(../imagenes/flecha.png);
+	margin-left: 0.5em;}
+
+/*Como extra le voy a mter al h1 su id como titulo
+entre parentesis*/
+h1::after{content: "("attr(id)")";}
+h1{padding: 1em;text-align: center;background-color: grey;}
+
+#contenedortexto{
+	display: flex;
+	flex-direction: row;
+	margin-top: 100px;
+	counter-reset: contador;
+}
+
+#contenedortexto h2{counter-increment: contador;}
+
+#contenedortexto h2::before{content: 'Columna' counter(contador);}
+
+#contenedortexto section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+#contenedortexto p{
+	text-align: justify;
+	width: 60%;
+}
+
+#interno{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#login{
+	height: 40px;
+	width: 40px;
+	background-image: url("imagenes/sprite.png");
+	background-size: 140px 150px;
+	background-position: 0px -5px;
+}
+
+#login:hover{
+	background-position: center;
+}
+
+h2{
+	text-decoration: underline;
+	font-weight: normal;
+	text-align: center;
+}
+/*Cada icono tiene 45px de ancho y 60 de alto
+	30px de separacion vertical
+	 55 de separacion horizontal
+	 30 horizontal de inicio
+	 15 de inicio
+	 */
+
+
+#chat{
+	border-style: dashed;
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+}	 
+
+#chat p{
+	text-align: center;
+	font-size: 1em;
+	width: 80px;
+	padding: 1em;
+	background-color: whitesmoke;
+}
+#chatimg{ 
+	background-color: gainsboro;
+	height: 60px;
+	width: 120px;
+	background-image: url("imagenes/sprite.png");
+	background-size: 280px 260px;
+	background-position: -175px -100px;
+	background-repeat: no-repeat;
+}
+
+#enviar{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	margin-top: 2em;
+}
+
+form{
+	padding: 6em;
+	left: 32%;
+	top: 20%;
+	position: absolute;
+	display: none;
+	grid-template-areas: 'ingresar ingresar ingresar' 'usuario texto texto' 'contraseña password password' 'enviar enviar enviar';
+	width: auto;
+	height: auto;
+	border-color: black;
+	border-style: solid;
+	justify-content: center;
+	background-color: white;
+}
+
+#usuario{
+	text-align: left;
+	padding: 1em;
+}
+
+#contraseña{
+	text-align: center;
+	padding: 1em;
+}
+#ingresar{
+  	text-decoration: none;
+	font-size: 4em;
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+#texto{
+	grid-column-start: 2;
+	grid-column-end: 4;	
+	column-gap: 1em;
+	margin: 15px;
+}
+
+#password{
+	grid-column-start: 2;
+	grid-column-end: 4;
+	column-gap: 1em;	
+	margin: 15px;
+}
+
+#cerrar{
+	background-color: white;
+	border-style: none;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 0;
+	background-image: url("imagenes/cruz.png");
+	background-size: cover;
+}
+
+#cerrar:hover{
+	background-image: url("imagenes/cruz.png");
+	background-size: contain;
+	cursor: pointer;
+}

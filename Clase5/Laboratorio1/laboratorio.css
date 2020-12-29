@@ -1,0 +1,26 @@
+body{
+	display: flex;
+	flex-direction: row;
+}
+
+main{
+	width: 70%;
+	line-height: 1.6em;
+	padding-left: 10%;
+}
+
+nav{
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+	height: 400px;
+}
+
+a{
+	font-size: 2em;
+	text-decoration: none;
+	color: cornflowerblue;
+}
+
+

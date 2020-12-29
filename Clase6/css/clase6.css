@@ -1,0 +1,106 @@
+body{
+    width: 100%;
+    height: auto;
+    background-color: blueviolet;
+    position: relative;
+}
+/*
+p, h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+}
+
+p, h1{
+    color: green;
+}
+
+h1{
+    color: black;
+}
+
+#parrafo{
+    font-family: Arial;
+    color: white;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+}
+
+*/
+h1{
+    text-align: right !important;
+}
+
+
+h1{
+    font-family: calibri;
+    color: white;
+    text-align: center;
+}
+
+/*
+Prefijos de CSS
+
+webkit: chrome-android-safari;
+moz: firefox;
+ms: internet explorer 8 o mayor;
+o: para opera;
+*/
+
+.box1{
+    width: 500px;
+    height: 350px;
+    background-color: #024D46;
+    /*border-radius: 20px;
+    si no se ve bien en android por ejemplo hago*/
+    -webkit-border-radius: 20px;
+    /*Hay que mirar en can i use que propiedades
+    pueden llegar a ser no compatibles con ciertos navegadores
+    es obligatorio ponerlo en algunos casos*/
+}
+
+/*Hacks*/
+
+#contenedor{
+    width: 300px;
+    height: 300px;
+    /*Hack del guion bajo
+    para internet explorer 6 e inferior
+    ademas debe escribirse una vez bien
+    y la otra con guion bajo*/
+    /*ademas a la primera que se supone bien 
+    declarada se le puede poner el hack del internet explorer
+    7 poniendo asterisco*/
+    *box-shadow: 0 0 10px black;
+    _box-shadow: 0 0 10px black;
+    background-color: red;
+    margin-top: 20px;
+}
+
+/*hack del guion bajo y del asterisco
+  supongo que box shadow no se renderiza en 
+  internet explorer 6 para abajo*/
+
+img{
+    position: absolute;
+    top: 105%;
+    opacity: 0.5;
+}
+
+img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+#caja{
+    width: 400px;
+    height: 350px;
+    background-color: red;
+    position: absolute;
+    right: 200px;
+    background-color: rgba(255,0,0,0.5);
+}

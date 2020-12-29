@@ -1,0 +1,40 @@
+body{
+    position: relative;
+    height: 1000px;
+    width: 1000px;
+}
+#caja1{
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+    position: absolute;
+    left: 220px;
+    z-index: 1;
+}
+#caja2{
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    position: absolute;
+    left: 300px;
+    top: 150px;
+    z-index: 2;
+}
+#caja3{
+    width: 200px;
+    height: 200px;
+    background-color: beige;
+    position: absolute;
+    left: 400px;
+    bottom: 550px;
+    z-index: 3;
+}
+#caja4{
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+    position: absolute;
+    right: 250px;
+    bottom: 450px;
+    z-index: 4;
+}

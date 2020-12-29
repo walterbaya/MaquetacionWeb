@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="video.css">
+	<title>::VIDEO Y AUDIO::</title>
+	<!--Los estilos de los correos electronicos son diferentes a los de css tienen su propia sintaxis si la sintaxis de yahoo el color en vez de color: black ponen color_ font es un lío, para eso la única solucion es poner en el html directamente los estilos de todo lo relacionado que va a viajar por web-->
+	<style type="text/css"> table{
+	width: 50%;
+	/*si una celda está vacía 
+	  entonces la esconde con hide o la muestra
+	  con show*/
+	empty-cells: hide;
+	/*separate crea bordes dobles por asi decirlo con espacio
+	en el medio*/
+	border-collapse: separate;
+	margin-left: 25px;
+}
+
+table, td{
+	border: 2px solid black;
+	padding: 5px;
+	font-family: verdana;
+	background-color: white;
+	color: black;
+}
+</style>
+</head>
+<body>
+
+<h1>VIDEO</h1>
+
+<iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<hr>
+
+<h2>Video Local</h2>
+
+<h3>Clase de algebra lineal</h3>
+<video src="videos/algebra.mp4" controls="preload"> </video>
+
+<h3>::Instrucciones::</h3>
+
+<audio src="audios/audio.mp3" controls="preload"></audio>
+
+<h1>Tablas</h1>
+
+<table>
+	<tr>
+		<td>Semana 1</td>
+		<td>Aeróbico</td>
+	</tr>
+	<tr>
+		<td>Semana 2</td>
+		<td>Fuerza</td>
+	</tr>
+	<tr>
+		<td>Semana 3</td>
+		<td>Resistencia</td>
+	</tr>
+	<tr>
+		<td>Semana 4</td>
+		<td>Libre + Dieta</td>
+	</tr>
+</table>
+
+</body>
+
+</html>
