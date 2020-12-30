@@ -1,23 +1,51 @@
-h1{
-    text-align: center;
-}
-
 main{
     background-color:lightgray;
 }
 
-#fuego{
-
+div{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+main div:first-child{
+    padding-top: 2em;
 }
 
-#aire{
-    color: cornflowerblue;
+main div:last-child{
+    padding-bottom: 2em;
 }
 
-#agua{
-
+h1{
+    text-align: center;
+    padding: 0.5em;
+    line-height: 1.6em;
 }
 
-#tierra{
+h2{
+    line-height:1.6em;
+}
 
+p{
+    line-height: 1.6em;
+    padding-top: 1em;
+    text-align:justify;
+}
+
+.fuego{
+    color: #cc0000;
+    border-bottom: solid #cc0000;
+}
+
+.aire{
+    color: #66B1EB;
+    border-bottom: solid #66B1EB;
+}
+
+.agua{
+    color: #00FF99;
+    border-bottom: solid #00FF99;
+}
+
+.tierra{
+    color: #F39800;
+    border-bottom: solid #F39800;
 }
