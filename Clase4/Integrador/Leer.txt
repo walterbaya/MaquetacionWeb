@@ -1,1 +1,0 @@
-El integrador original no era interesante, asi que lo que hice fue agarrar el tienda de zapatos y agregarle sprites y también after mas contadores.
