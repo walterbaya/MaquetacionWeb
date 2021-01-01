@@ -1,0 +1,59 @@
+header{
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+}
+
+#contenedor{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1em;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#contenedor nav ul{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li{
+	padding-right: 0.5em;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+nav li:first-child{
+	font-size: 2em;
+}
+
+li a{
+	text-decoration: none;
+	color: black;
+}
+
+#buscar{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: solid gray; 
+}
+
+input{
+	padding: 1em;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-style: italic;
+}
+
+header p{
+	border-top: dashed;
+	border-bottom: dashed;
+	padding: 2em;
+	padding-left: 0;
+	padding-right: 0;
+}
